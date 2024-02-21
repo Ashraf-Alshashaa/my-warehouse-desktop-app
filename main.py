@@ -9,7 +9,7 @@ try:
 
     app.title("My Warehouse")
 
-    app.iconbitmap("../resources/images/app.ico")
+    app.iconbitmap("./resources/images/app.ico")
     
     app.after(0, lambda: app.state('zoomed'))
 
