@@ -1,5 +1,6 @@
 try:
     from customtkinter import * 
+    from ui.main_window import main_win
 
     set_appearance_mode("System")  
 
@@ -13,6 +14,11 @@ try:
     
     app.after(0, lambda: app.state('zoomed'))
 
+    app.grid_columnconfigure(0, weight=1)
+    app.grid_rowconfigure(0, weight=1)
+
+    main_win(app)
+    
     app.mainloop()
 
 except Exception as e:
