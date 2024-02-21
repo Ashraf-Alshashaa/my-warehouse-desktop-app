@@ -1,1 +1,3 @@
-# my-warehouse-desktop-app
+# My Warehouse
+
+## Desktop app
