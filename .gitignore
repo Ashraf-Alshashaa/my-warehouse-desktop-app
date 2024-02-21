@@ -1,0 +1,32 @@
+# .gitignore
+
+# Python-related
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+venv.bak/
+
+# Compiled files
+*.pyc
+*.pyo
+*.pyd
+
+# IDE-specific files
+.vscode/
+*.code-workspace
+*.pyproj
+*.suo
+*.user
+*.sln
+*.vscode/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Application-specific
+db.sqlite  # Exclude SQLite database file if generated during development
