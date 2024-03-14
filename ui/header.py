@@ -1,11 +1,11 @@
 from . import *
 from time import strftime
 
-def header(parent):
+def header(parent, page_name):
     header = CTkFrame(parent)
     header.grid( row=0, column=1, sticky='nsew',  padx=(5, 20), pady=(20, 5))
     
-    page_title = CTkLabel(header, text="Create Order", font=("Arial", 24))
+    page_title = CTkLabel(header, text=page_name, font=("Arial", 24))
     page_title.pack(side="left", padx=(20, 20)) 
 
     clock = CTkLabel(header, font=("Arial", 20))
@@ -17,9 +17,4 @@ def header(parent):
       clock.after(1000, time)
     
     time()
-
-    return page_title
-
-def update_page_title(label, new_text):
-    label.configure(text=new_text)
     
