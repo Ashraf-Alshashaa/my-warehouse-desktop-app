@@ -1,30 +1,29 @@
 from . import *
 from PIL import Image
-from .header import update_page_title
 
-def sidebar(parent, page_title_label):
+def sidebar(parent, update_page):
     navigate_buttons = [
         {
             "text":"Create Order", 
-            "command":lambda: update_page_title(page_title_label, "Create Order" ),
+            "command":lambda: update_page("create order"),
             "img": Image.open("./resources/images/create.png"),
             "pos": "top"
         }, 
         {
             "text":"Inventory", 
-            "command":lambda: update_page_title(page_title_label, "Inventory"),
+            "command":lambda: update_page("inventory"),
             "img": Image.open("./resources/images/inventory.png"),
             "pos": "top"
         }, 
         {
             "text":"Sales", 
-            "command":lambda: update_page_title(page_title_label, "Sales"),
+            "command":lambda: update_page("sales"),
             "img": Image.open("./resources/images/sales.png"),
             "pos": "top"
         }, 
         {
             "text":"Settings", 
-            "command":lambda: update_page_title(page_title_label, "Settings" ),
+            "command":lambda: update_page("settings" ),
             "img": Image.open("./resources/images/settings.png"),
             "pos": "bottom"
         }
